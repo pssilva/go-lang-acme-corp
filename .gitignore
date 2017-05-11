@@ -22,3 +22,20 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+####################
+# App ##############
+####################
+.project
+.settings/
+go-lang-acme-corp.log
+bin/
+#pkg/darwin_amd64/*
+.DS_Store
+
+####################
+# Templates  #######
+####################
+
+
+

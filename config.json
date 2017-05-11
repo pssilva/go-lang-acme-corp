@@ -1,0 +1,7 @@
+{
+  "Address"        : "0.0.0.0:8080",
+  "ReadTimeout"    : 10,
+  "WriteTimeout"   : 600,
+  "Static"         : "/src/main/staticweb/public",
+  "AppName"        : "go-lang-acme-corp"
+}
