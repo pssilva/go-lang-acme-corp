@@ -61,8 +61,7 @@ O projeto será adaptado para os seguintes temas (themes):
 
 
 ---
-## Referência
-
+### Referência
 
 \[Shiju Varghese: 2015\], Apress. [Web Development with Go](http://www.apress.com/us/book/9781484210536): Building Scalable Web Apps and RESTful Services <br />
 \[Caleb Doxsey: 2016\], O’Reilly Media, Inc. [Introducing Go](http://shop.oreilly.com/product/0636920046516.do): Build Reliable, Scalable Programs <br />

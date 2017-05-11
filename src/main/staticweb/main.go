@@ -37,7 +37,7 @@ func main() {
 	fs := http.FileServer(http.Dir(getRootPath() + config.Static))
 	mux.Handle("/static/", http.StripPrefix("/static/", fs))
 	mux.HandleFunc("/process", process)
-    mux.HandleFunc("/", getNotes)
+    mux.HandleFunc("/", index)
     mux.HandleFunc("/admin-lte", getNotesAdminLte)
     mux.HandleFunc("/notes/add", addNote)
     mux.HandleFunc("/notes/save", saveNote)
@@ -55,7 +55,7 @@ func init() {
         templates = make(map[string]*template.Template)
     }
     templates["index"] = template.Must(template.ParseFiles(getRootPath() + "/src/main/staticweb/templates/index.html",
-    		getRootPath() + "/src/main/staticweb/templates/base.html"))
+    		getRootPath() + "/src/main/staticweb/templates/admin-lte.html"))
     
     templates["admin-lte"] = template.Must(template.ParseFiles(getRootPath() + "/src/main/staticweb/templates/index.html",
     		getRootPath() + "/src/main/staticweb/templates/admin-lte.html"))
@@ -90,8 +90,13 @@ func getNotes(w http.ResponseWriter, r *http.Request) {
 }
 
 func getNotesAdminLte(w http.ResponseWriter, r *http.Request) {
-	log.Println("ID:103")
+	log.Println("ID:93")
     renderTemplate(w, "admin-lte", "admin-lte", noteStore)
+}
+
+func index(w http.ResponseWriter, r *http.Request) {
+	log.Println("ID:98")
+    renderTemplate(w, "index", "admin-lte", noteStore)
 }
 
 func addNote(w http.ResponseWriter, r *http.Request) {
