@@ -34,7 +34,7 @@ Considerando que o seu ambinete SDK já esteja preparado.
 1. Clonar: `git https://github.com/pssilva/go-lang-acme-corp.git`;
 2. Acessar: `cd go-lang-acme-corp`;
 3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7` 
-   - E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/AdminLTE2.3.7/README.md)
+   - E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/theme/AdminLTE2.3.7/README.md)
 4. Start Server: `cd src && go install -v -gcflags "-N -l" main/staticweb`;
 5. acessar o link: `localhost:8080`;
 
@@ -42,7 +42,7 @@ Considerando que o seu ambinete SDK já esteja preparado.
 O projeto será adaptado para os seguintes temas (themes):
 
 1. [AdminLTE](https://github.com/almasaeed2010/AdminLTE); <br />
->AdminLTE: [Trabalho em progresso]
+>AdminLTE: `localhost:8080` ou `http://localhost:8080/admin-lte`
 !["AdminLTE Presentation"](https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
 
 2. [Gentelella Allela](https://github.com/puikinsh/gentelella); <br />
