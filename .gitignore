@@ -36,6 +36,9 @@ bin/
 ####################
 # Templates  #######
 ####################
-
-
+src/main/staticweb/public/theme/AdminLTE2.3.7/documentation/*
+src/main/staticweb/public/theme/AdminLTE2.3.7/build/*
+src/main/staticweb/public/theme/AdminLTE2.3.7/bower_components/*
+src/main/staticweb/public/theme/AdminLTE2.3.7/node_modules/*
+src/main/staticweb/public/theme/AdminLTE2.3.7/vendor/*
 

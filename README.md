@@ -29,6 +29,8 @@ web que disponibilize funcionalidades de controle do estoque.
 
 ### Como usar:
 
+Considerando que o seu ambinete SDK já esteja preparado.
+
 1. Clonar: `git https://github.com/pssilva/go-lang-acme-corp.git`;
 2. Acessar: `cd go-lang-acme-corp`;
 3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7` 
