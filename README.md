@@ -35,7 +35,8 @@ Considerando que o seu ambinete SDK já esteja preparado.
 2. Acessar: `cd go-lang-acme-corp`;
 3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7` 
    - E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/theme/AdminLTE2.3.7/README.md)
-4. Start Server: `cd src && go install -v -gcflags "-N -l" main/staticweb`;
+4. Intall Package: `go install -v -gcflags "-N -l" main/staticweb`;
+4. Run Server: `go run src/main/staticweb/*.go`;
 5. acessar o link: `localhost:8080`;
 
 ### Temas 

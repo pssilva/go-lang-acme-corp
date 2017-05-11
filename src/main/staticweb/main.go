@@ -20,14 +20,12 @@ type Note struct {
     CreatedOn   time.Time
 }
 
-
 //Store for the Notes collection
 var noteStore = make(map[string]Note)
 //Variable to generate key for the collection
 var id int = 0
 
 var templates map[string]*template.Template
-
 
 func main() {
 	
@@ -66,8 +64,6 @@ func init() {
     templates["edit"] = template.Must(template.ParseFiles(getRootPath() + "/src/main/staticweb/templates/edit.html",
     		getRootPath() + "/src/main/staticweb/templates/base.html"))
 }
-
-
 
 //Render templates for the given name, template definition and data object
 func renderTemplate(w http.ResponseWriter, name string, template string, viewModel interface{}) {
