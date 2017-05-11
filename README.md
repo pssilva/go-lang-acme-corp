@@ -34,13 +34,13 @@ web que disponibilize funcionalidades de controle do estoque.
 3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7` 
    - E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/AdminLTE2.3.7/README.md)
 4. Start Server: `cd src && go install -v -gcflags "-N -l" main/staticweb`;
-5. acessar o link: `localhost:8000/go-lang-acme-corp/`;
+5. acessar o link: `localhost:8080`;
 
 ### Temas 
 O projeto será adaptado para os seguintes temas (themes):
 
 1. [AdminLTE](https://github.com/almasaeed2010/AdminLTE); <br />
->AdminLTE: `http://localhost:8000/static/theme/AdminLTE2.3.7/index.html`
+>AdminLTE: [Trabalho em progresso]
 !["AdminLTE Presentation"](https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
 
 2. [Gentelella Allela](https://github.com/puikinsh/gentelella); <br />
