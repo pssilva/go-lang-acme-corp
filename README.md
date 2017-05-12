@@ -55,7 +55,7 @@ O projeto será adaptado para os seguintes temas (themes):
  1. Gerar Relatórios;
  2. Enviar E-mails;
  3. Autenticação OAuth2;
- 4. Implementar Serviço com Arquitetural REST;
+ 4. Implementar RESTful APIs;
  5. Automatizar geração de CRUDs;
  6. Integração com Logstash;
  7. Gerenciar Logstash com Elasticsearch;
