@@ -2,10 +2,14 @@ package main
 
 import (
 	"html/template"
-    "log"
-    "net/http"
-    "strconv"
-    "time"
+	"log"
+	"net/http"
+	"strconv"
+	"time"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
+	//"main/staticweb/data"
+	product "main/model/products"
 )
 
 //View Model for edit
@@ -30,6 +34,25 @@ var templates map[string]*template.Template
 func main() {
 	
 	log.Println("ID:27")
+	p := product.Product{
+        bson.NewObjectId(),
+        "Open Source",
+        "Tasks for open-source projects",
+    }
+	
+	product.Save(p)
+	
+	session, err := mgo.Dial("localhost")
+	if err != nil {
+		panic(err) 
+	}
+	
+	defer session.Close()
+	//Switch the session to a monotonic behavior.
+	session.SetMode(mgo.Monotonic, true)
+	
+	//p := session.DB("northwind").C("products")
+	
 	
 	mux := http.NewServeMux()
 	fs := http.FileServer(http.Dir(getRootPath() + config.Static))
@@ -65,20 +88,7 @@ func init() {
     		getRootPath() + "/src/main/staticweb/templates/base.html"))
 }
 
-//Render templates for the given name, template definition and data object
-func renderTemplate(w http.ResponseWriter, name string, template string, viewModel interface{}) {
-    // Ensure the template exists in the map.
-    tmpl, ok := templates[name]
-    if !ok {
-        http.Error(w, "The template does not exist.", http.StatusInternalServerError)
-    }
-    log.Println("ID:85 renderTemplate() :: template = " + template)
-    log.Println("ID:86 renderTemplate() :: name = " + name)
-    err := tmpl.ExecuteTemplate(w, template, viewModel)
-    if err != nil {
-        http.Error(w, err.Error(), http.StatusInternalServerError)
-    }
-}
+
 
 func getNotes(w http.ResponseWriter, r *http.Request) {
 	log.Println("ID:92")

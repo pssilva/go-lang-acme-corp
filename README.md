@@ -1,8 +1,6 @@
 # goLang Acme Corp
 Projeto Conceito para implementar uma aplicação web usando a linguagem goLang. 
-Tendo o seguinte contexto:  A pouco tempo a empresa Acme Corporation iniciou suas vendas online e carece de uma 
-plataforma robusta para as vendas. Para que as vendas online tenham sucesso a Acme necessita de um novo serviço 
-web que disponibilize funcionalidades de controle do estoque.
+Tendo o seguinte contexto: A pouco tempo a empresa Acme Corporation iniciou suas vendas online e carece de uma plataforma robusta para as vendas. Para que as vendas online tenham sucesso a Acme necessita de um novo serviço web que disponibilize funcionalidades de controle do estoque.
 
 
 ## Objetivos Principais:
@@ -13,17 +11,20 @@ web que disponibilize funcionalidades de controle do estoque.
 
 ### Adquirir Proficiências em Habilidades
 
-1. Experiência em implementar usando a linguagem [GoLang](https://golang.org/);
+1 - Experiência em implementar usando a linguagem [GoLang](https://golang.org/);
 
 ![GoLang](https://github.com/pssilva/go-lang-acme-corp/blob/master/doc-repo/Go-brown-side.sh.png)
 
-2. Experiência em sistemas de banco de dados NoSQL (Cassandra, [MongoDB](https://www.mongodb.com/), etc.);
+2 - Experiência em sistemas de banco de dados NoSQL (Cassandra, [MongoDB](https://www.mongodb.com/), etc.);
     <p><img src="https://github.com/pssilva/go-lang-acme-corp/blob/master/doc-repo/mongoDB.png" alt="Experiência em sistemas de banco de dados NoSQL" height="50" width="195"/></p>
-2. Experiência em sistemas de containerização (e.g. [Docker](https://hub.docker.com/r/pss1suporte/paas-docker/));
+
+3 - Experiência em sistemas de containerização (e.g. [Docker](https://hub.docker.com/r/pss1suporte/paas-docker/));
     <p><img src="https://github.com/pssilva/go-lang-acme-corp/blob/master/doc-repo/docker.png" alt="Experiência em sistemas de containerização Docker" height="50" width="195"></p>
-3. Experiência em sistemas Linux e shell scripting;
+
+4 - Experiência em sistemas Linux e shell scripting;
     <p><img src="https://github.com/pssilva/go-lang-acme-corp/blob/master/doc-repo/shell-linux.png" alt="Experiência em sistemas Linux e shell scripting" height="91" width="150"></p>
-4. Experiência em projetos utilizando micro serviços (Microservices) e computação distribuída;
+
+5 - Experiência em projetos utilizando micro serviços (Microservices) e computação distribuída;
 
 ![Microservices](https://github.com/pssilva/go-lang-acme-corp/blob/master/doc-repo/microservices-domain.png)
 
@@ -33,11 +34,16 @@ Considerando que o seu ambinete SDK já esteja preparado.
 
 1. Clonar: `git https://github.com/pssilva/go-lang-acme-corp.git`;
 2. Acessar: `cd go-lang-acme-corp`;
-3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7` 
-   - E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/theme/AdminLTE2.3.7/README.md)
-4. Intall Package: `go install -v -gcflags "-N -l" main/staticweb`;
-4. Run Server: `go run src/main/staticweb/*.go`;
-5. acessar o link: `localhost:8080`;
+3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7`;<br />
+	- E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/theme/AdminLTE2.3.7/README.md)
+4. Import Database MongoDB:<br />
+	Considerando que no seu ambiente já tenha o MondoDB instalado e configurado.<br />
+		`$ chmod u+x /doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
+		`$ ./doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
+   
+5. Install Package: `go install -v -gcflags "-N -l" main/staticweb`;
+6. Run Server: `go run src/main/staticweb/*.go`;
+7. acessar o link: `localhost:8080`;
 
 ### Temas 
 O projeto será adaptado para os seguintes temas (themes):
@@ -67,5 +73,8 @@ O projeto será adaptado para os seguintes temas (themes):
 \[Shiju Varghese: 2015\], Apress. [Web Development with Go](http://www.apress.com/us/book/9781484210536): Building Scalable Web Apps and RESTful Services <br />
 \[Caleb Doxsey: 2016\], O’Reilly Media, Inc. [Introducing Go](http://shop.oreilly.com/product/0636920046516.do): Build Reliable, Scalable Programs <br />
 \[Ivo Balbaert: 2012\], iUniverse, Inc. Bloomington. [The Way to Go](https://www.amazon.com.br/Way-Go-Thorough-Introduction-Programming-ebook/dp/B0083RVAJW): A Thorough Introduction to the Go Programming Language <br />
+\[Kristina Chodorow: 2013\], O’Reilly Media, Inc. [MongoDB: The Definitive Guide](http://shop.oreilly.com/product/0636920028031.do): Second Edition <br />
+\[Shantanu Tushar, Sarath Lakshman: 2015\], Wiley Authenticity Guarantee. [Linux Command Line and Shell Scripting Bible](http://www.wiley.com/WileyCDA/WileyTitle/productCd-111898384X.html): 3rd Edition  - The Comprehensive, Tutorial Resource<br />
+\[Richard Blum, Christine Bresnahan: 2013\], Packt Publishing Ltd. [Linux Shell Scripting Cookbook](https://www.packtpub.com/networking-and-servers/linux-shell-scripting-cookbook-second-edition): Over 110 practical recipes to solve real-world shell problems, guaranteed to make you wonder how you ever lived without them <br />
 \[Christian Posta: 2016\], O’Reilly Media, Inc., [Microservices for Java Developers](https://developers.redhat.com/promotions/microservices-for-java-developers/): A Hands-on Introduction to Frameworks and Containers <br />
 
