@@ -39,7 +39,7 @@ Considerando que o seu ambinete SDK já esteja preparado.
 4. Import Database MongoDB:<br />
 	Considerando que no seu ambiente já tenha o MondoDB instalado e configurado.<br />
 		`$ chmod u+x doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
-		`$ cd ~ && ./doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
+		`$ ./doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
    
 5. Install Package: `cd /PATH_TO/go-lang-acme-corp && go install -v -gcflags "-N -l" main/staticweb`;
 6. Run Server: `go run src/main/staticweb/*.go`;
