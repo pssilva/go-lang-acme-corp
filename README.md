@@ -41,7 +41,7 @@ Considerando que o seu ambinete SDK já esteja preparado.
 		`$ chmod u+x doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
 		`$ cd ~ && ./doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
    
-5. Install Package: `go install -v -gcflags "-N -l" main/staticweb`;
+5. Install Package: `cd /PATH_TO/go-lang-acme-corp && go install -v -gcflags "-N -l" main/staticweb`;
 6. Run Server: `go run src/main/staticweb/*.go`;
 7. acessar o link: `localhost:8080`;
 
