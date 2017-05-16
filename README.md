@@ -34,15 +34,16 @@ Considerando que o seu ambinete SDK já esteja preparado.
 
 1. Clonar: `git https://github.com/pssilva/go-lang-acme-corp.git`;
 2. Acessar: `cd go-lang-acme-corp`;
-3. Instalar Theme: `cd src/main/staticweb/public/theme/AdminLTE2.3.7`;<br />
+2. Definir Path: `export GO_PATH=$(pwd)`;
+3. Instalar Theme: `cd $GO_PATH/src/main/staticweb/public/theme/AdminLTE2.3.7`;<br />
 	- E executar a instalação: [AdminLTE](https://github.com/pssilva/go-lang-acme-corp/blob/master/src/main/staticweb/public/theme/AdminLTE2.3.7/README.md)
 4. Import Database MongoDB:<br />
 	Considerando que no seu ambiente já tenha o MondoDB instalado e configurado.<br />
-		`$ chmod u+x doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
-		`$ ./doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
+		`$ chmod u+x $GO_PATH/doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
+		`$ cd $GO_PATH && ./doc-repo/databases/mongo-import-mongostore-db.sh`;<br />
    
-5. Install Package: `cd /PATH_TO/go-lang-acme-corp && go install -v -gcflags "-N -l" main/staticweb`;
-6. Run Server: `go run src/main/staticweb/*.go`;
+5. Install Package: `cd $GO_PATH && go install -v -gcflags "-N -l" main/staticweb`;
+6. Run Server: `go run $GO_PATH/src/main/staticweb/*.go`;
 7. acessar o link: `localhost:8080`;
 
 ### Temas 
